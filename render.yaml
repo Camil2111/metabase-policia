@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: metabase-policia
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MB_JETTY_PORT
+        value: 3000
